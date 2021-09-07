@@ -1,0 +1,106 @@
+.horariosClases{
+    width:80%; margin-left: auto; margin-right: auto;
+    margin-top:10px; margin-bottom:0;
+    height: 2000px;
+    background-color:white;
+
+    .infoContainer_t{
+            background: white;
+            box-shadow: #333;
+            display: grid;
+            grid-gap: 30px;
+            grid-template-columns: repeat(2, 1fr);
+            padding: 3rem;
+            transition: all 3s;
+            border-radius: 6px;
+            @include small {
+               
+                display: flex;
+                flex-direction: column;
+                margin-right: 0px;
+                padding: 0%;
+                height: 700px;
+                
+                align-items: flex-start;
+
+                p{
+                    font-size: 10px;
+                    text-align: right;
+                }}
+
+           
+            img{
+                width:40vw;
+                height: 60vh;
+                margin:0%;
+                padding:0%;
+                @include small{
+                    width:280px;
+                    height:280px;
+                }
+            }
+
+            .btn {
+                background:$tercerColor;
+                color: white;
+                box-sizing: border-box;
+                text-decoration: none;
+                border: 0;
+                color: #fffffe;
+            }
+
+        }
+        
+        .infoContainer2{
+            background: white;
+            box-shadow: #333;
+            display: grid;
+            grid-gap: 30px;
+            grid-template-columns: repeat(2, 1fr);
+            padding: 3rem;
+            transition: all 4s;
+
+            
+
+            @include small{
+                display: flex;
+                flex-direction: column;
+                background-color: $tercerColor;
+                margin-left:0px;
+                padding:20px;
+                height: 700px;
+                p{font-size: 10px;}
+            }
+            
+            img{
+                width:40vw;
+                height: 60vh;
+                margin:0%;
+                padding:0%;
+                @include small{
+                    width:250px;
+                    height:280px;
+                    margin-right: 0%;
+                }
+            }
+
+            .btn {
+                background:$tercerColor;
+                color: white;
+                box-sizing: border-box;
+                text-decoration: none;
+                border: 0;
+                color: #fffffe;
+            }
+        }    
+
+    h2{
+        @extend %fontStyleH2;
+        padding: $padding*1.5;
+    }
+    h3{
+        @extend %fontStyleH3;
+        padding: $padding;
+    }
+
+}    

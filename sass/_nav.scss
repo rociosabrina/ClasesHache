@@ -1,0 +1,83 @@
+nav{
+    display: inline;
+    text-align: center;
+    list-style: none;
+  
+    
+    ul{
+        @include flex(flex,row,space-evenly,flex-start);
+        height: 50px;
+        margin-bottom: 2%;
+        @include small {
+                justify-content:flex-start;
+                flex-direction: row;
+                margin:0%;
+                height: fit-content;  }
+                        
+
+        li {
+            @extend %fontStyle;
+            @include small {
+                width:auto;
+                font-size: 10px;
+                padding:10px;
+                      
+               }
+          
+        
+              
+            &:link {
+                    text-decoration: none;
+                    color:$colorPrincipal;
+                    }
+            &:visited {
+                    text-decoration: none;
+                    color:$colorPrincipal;
+                    
+                    }
+            &:hover {
+                        text-decoration: none;
+                     color:$tercerColor;
+                     
+                     #menuTop__submenu {
+                        display: block;}
+                    
+                    }
+            &:active {
+                    text-decoration: none;
+                    color: $colorPrincipal;                 
+                    }
+         }  
+
+        
+    
+        .menuTop__barraMenu{
+            a:link {
+                text-decoration: none;
+                color:$colorPrincipal;
+                font-weight: 800;
+                }
+        a:visited {
+                text-decoration: none;
+                color:$colorPrincipal;
+                font-weight: 800;
+                
+                }
+        a:hover {
+                    text-decoration: none;
+                 color:$tercerColor;
+                 font-weight: 800;
+                
+                }
+        a:active {
+                text-decoration: none;
+                color: $colorPrincipal;      
+                font-weight: 800;           
+                }
+        }
+        
+       
+
+    }
+
+    }

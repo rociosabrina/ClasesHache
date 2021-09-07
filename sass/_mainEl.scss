@@ -1,0 +1,182 @@
+main{
+    margin: 0px;
+    margin-top:0px; margin-bottom:0;
+    height: 1300px;
+    padding-bottom: 16px;
+     
+   
+    .portada__guitar{
+        width:100%; 
+                       
+        animation: movimientoImagen 2s
+        }
+
+        @keyframes movimientoImagen {
+            from {
+              margin-left:100%;
+              width:200%
+            }
+          
+            to {
+             margin-left:0%;
+             width:100%;
+           }    
+        }
+
+        @include small {
+            width: 100%;
+            height: 60%;
+        
+           
+          }
+       
+
+        .infoContainer{
+            background-color: black;
+            box-shadow: #333;
+            display: grid;
+            grid-gap: 10px;
+            grid-template-columns: repeat(2, 1fr);
+            padding: 3rem;
+            transition: all 4s;
+            margin: 3rem;
+            color:white;
+            border-radius: 6px;
+            
+            img{
+                width:30vw;
+                height: 90vh;
+                }
+
+            @include small {
+               
+                display: flex;
+                flex-direction: column;
+                margin:0px;
+                padding:0px;
+                height: 600px;
+                background-color: transparent;
+                          
+                align-items: flex-start;
+                img{width:60vw;
+                    height: 60vh;
+                    margin-left: 70px;
+
+                }
+                p{
+                    font-size: 10px;
+                    text-align: justify;
+                    margin-left:0px;
+                    padding:0%;
+                    width: 300px;
+                  
+                }}
+
+            .btn {
+                background:$tercerColor;
+                color: white;
+                box-sizing: border-box;
+                text-decoration: none;
+                border: 0;
+                color: #fffffe;
+                padding:20px;
+                margin:30px;
+            }
+
+            h3{
+                color: $tercerColor;
+            }
+
+            p{
+                color:#bac3e4; text-align: center; 
+                font-family: 'Roboto', sans-serif;
+                font-size: 15px;
+                font-style: normal;
+                word-spacing: 5px;
+                padding: 10px;
+                text-justify: auto;
+                }
+
+            
+        }
+            
+
+    div{
+        height:$alto*0.6;
+        padding:$padding;
+        }
+
+
+    #titulo{
+        width: 100%;
+        height: 50px;
+        padding: 10px;
+        margin:10px;
+        h2{text-align: left;
+           }
+             
+    }   
+    
+    h2{
+        @extend %fontStyleH2;
+        padding: $padding*1.5;
+    }
+    h3{
+        @extend %fontStyleH3;
+        padding: $padding;
+    }
+
+
+    .infoContainer4{
+        background-color: $tercerColor;
+        box-shadow: #333;
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 3rem;
+        transition: all 4s;
+        margin: 3rem;
+        color:white;
+        border-radius: 6px;
+        height: 700px;
+        @include small {
+               
+            display: flex;
+            flex-direction: column;
+            margin:0px;
+            padding: 0%;
+            height: 700px;
+            
+            align-items: flex-start;
+            div{
+                height: 200px;
+            }
+            .mapaUb{
+                iframe{
+                    width:300px;
+                    height: 300px;
+                    margin-left:30px;
+                }
+            }    
+           
+        }
+
+        h2{
+            color:$colorPrincipal; 
+            vertical-align: middle;
+            font-family: 'Lobster';
+            font-size: 50px;
+            font-style: normal;
+            font-weight: bold;
+            word-spacing: 20px;
+            padding: 30px;
+            margin-left: 50px;
+            @include small{
+                font-size: 20px;
+                text-align: center;
+            }
+        
+        }
+    }
+        
+    }
